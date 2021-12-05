@@ -34,13 +34,3 @@ train_node2vec=Node2Vec(train_subgraph, dimensions=10, walk_length=5, num_walks=
 train_model=train_node2vec.fit(window=10, min_count=1, batch_words=4)
 train_model.wv.most_similar('2')
 train_model.wv.save_word2vec_format("train embedding.emb")
-
-
-
-
-
-
-
-
-
-
